@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap");
+
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+.stepper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .step-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    margin: 10px 5px;
+    overflow: visible;
+    .title {
+      margin-top: 3px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #767676;
+    }
+    .title.active {
+      color: #002eff;
+    }
+  }
+  .line,
+  .line-dashed {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    width: 100%;
+  }
+  .line {
+    border: 1px solid #002eff;
+  }
+  .line-dashed {
+    border: 1px dashed #767676;
+  }
+}
+
+.bottom-left {
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+
+.bottom-right {
+  position: fixed;
+  top: 100px;
+  right: 0;
+}
